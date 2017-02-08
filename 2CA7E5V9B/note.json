@@ -1,0 +1,235 @@
+{
+  "paragraphs": [
+    {
+      "text": "%md\n###Twitter - Kafka - Spark Streaming - MySQL (Python)\nApp downloads twitter messages filtering by **interest tag** and save to MySQL tags that are mentioned with it.\n\nRequired libraries:\n•\ttweepy\n•\tpy4j \n•\tkafka\n•\tMySQL-python (must be installed on all cluster nodes)\n\nHow to run\n1. Enter **interest_tag** in text_box in paragraph *Enter interest tag*\n2. Run paragraph *Twitter --\u003e Kafka (producer)*\n3. Run paragraph *Spark Streaming --\u003e MySQL*\n4. Enter **interest_tag** (or any previous interst tags) in text_box in paragraph *Visualization from database*\n",
+      "user": "amelnikova",
+      "dateUpdated": "Feb 7, 2017 8:44:59 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "results": [
+          {}
+        ]
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003ch3\u003eTwitter - Kafka - Spark Streaming - MySQL (Python)\u003c/h3\u003e\n\u003cp\u003eApp downloads twitter messages filtering by \u003cstrong\u003einterest tag\u003c/strong\u003e and save to MySQL tags that are mentioned with it.\u003c/p\u003e\n\u003cp\u003eRequired libraries:\n\u003cbr  /\u003e•   tweepy\n\u003cbr  /\u003e•   py4j\n\u003cbr  /\u003e•   kafka\n\u003cbr  /\u003e•   MySQL-python (must be installed on all cluster nodes)\u003c/p\u003e\n\u003cp\u003eHow to run\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003eEnter \u003cstrong\u003einterest_tag\u003c/strong\u003e in text_box in paragraph \u003cem\u003eEnter interest tag\u003c/em\u003e\u003c/li\u003e\n\u003cli\u003eRun paragraph \u003cem\u003eTwitter \u0026ndash;\u003e Kafka (producer)\u003c/em\u003e\u003c/li\u003e\n\u003cli\u003eRun paragraph \u003cem\u003eSpark Streaming \u0026ndash;\u003e MySQL\u003c/em\u003e\u003c/li\u003e\n\u003cli\u003eEnter \u003cstrong\u003einterest_tag\u003c/strong\u003e (or any previous interst tags) in text_box in paragraph \u003cem\u003eVisualization from database\u003c/em\u003e\u003c/li\u003e\n\u003c/ol\u003e\n"
+          }
+        ]
+      },
+      "result": {
+        "code": "SUCCESS",
+        "type": "HTML",
+        "msg": "\u003ch3\u003eTwitter - Kafka - Spark Streaming - MySQL (Python)\u003c/h3\u003e\n\u003cp\u003eApp downloads twitter messages filtering by \u003cstrong\u003einterest tag\u003c/strong\u003e and save to MySQL tags that are mentioned with it.\u003c/p\u003e\n\u003cp\u003eRequired libraries:\n\u003cbr  /\u003e•   tweepy\n\u003cbr  /\u003e•   py4j\n\u003cbr  /\u003e•   kafka\n\u003cbr  /\u003e•   MySQL-python (must be installed on all cluster nodes)\u003c/p\u003e\n\u003cp\u003eHow to run\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003eEnter \u003cstrong\u003einterest_tag\u003c/strong\u003e in text_box in paragraph \u003cem\u003eEnter interest tag\u003c/em\u003e\u003c/li\u003e\n\u003cli\u003eRun paragraph \u003cem\u003eTwitter \u0026ndash;\u003e Kafka (producer)\u003c/em\u003e\u003c/li\u003e\n\u003cli\u003eRun paragraph \u003cem\u003eSpark Streaming \u0026ndash;\u003e MySQL\u003c/em\u003e\u003c/li\u003e\n\u003cli\u003eEnter \u003cstrong\u003einterest_tag\u003c/strong\u003e (or any previous interst tags) in text_box in paragraph \u003cem\u003eVisualization from database\u003c/em\u003e\u003c/li\u003e\n\u003c/ol\u003e\n"
+      },
+      "apps": [],
+      "jobName": "paragraph_1486488393757_214266403",
+      "id": "20170207-202633_686254738",
+      "dateCreated": "Feb 7, 2017 8:26:33 PM",
+      "dateStarted": "Feb 7, 2017 8:41:48 PM",
+      "dateFinished": "Feb 7, 2017 8:41:48 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Enter interest tag",
+      "text": "%python \ninterest_hashtag \u003d z.input(\"name\", \"moscow\")",
+      "user": "amelnikova",
+      "dateUpdated": "Feb 7, 2017 8:57:16 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "title": true,
+        "editorHide": false,
+        "editorMode": "ace/mode/scala",
+        "results": []
+      },
+      "settings": {
+        "params": {
+          "name": "trump"
+        },
+        "forms": {
+          "name": {
+            "name": "name",
+            "displayName": "name",
+            "type": "input",
+            "defaultValue": "moscow",
+            "hidden": false
+          }
+        }
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": ""
+      },
+      "apps": [],
+      "jobName": "paragraph_1486467011961_-983265482",
+      "id": "20170207-143011_325328429",
+      "dateCreated": "Feb 7, 2017 2:30:11 AM",
+      "dateStarted": "Feb 7, 2017 8:57:17 PM",
+      "dateFinished": "Feb 7, 2017 8:57:17 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Twitter --\u003e Kafka (producer)",
+      "text": "%python\nfrom kafka import KafkaProducer\nfrom tweepy.streaming import StreamListener\nfrom tweepy import OAuthHandler\nfrom tweepy import Stream\nimport datetime\nimport json\nimport sys\nreload(sys)\nsys.setdefaultencoding(\u0027utf-8\u0027)\n\n#Variables that contains the user credentials to access Twitter API \naccess_token \u003d \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\"\naccess_token_secret \u003d \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\"\nconsumer_key \u003d \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\"\nconsumer_secret \u003d \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\"\n\nproducer \u003d KafkaProducer(bootstrap_servers\u003d[\u0027xxxx:6667\u0027],\n                         value_serializer\u003dlambda v: json.dumps(v).encode(\u0027ascii\u0027))\ntopic \u003d \u0027hashtag\u0027\n\nclass StdOutListener(StreamListener):\n    def on_data(self, data):\n        all_data \u003d json.loads(data)\n        if \u0027entities\u0027 in all_data.keys():\n            if len(all_data[\u0027entities\u0027][\u0027hashtags\u0027])\u003e0:\n                dictRecord \u003d {}  # dictionary for messages\n                for item in all_data[\u0027entities\u0027][\u0027hashtags\u0027]:\n                    if item[\u0027text\u0027].lower() \u003c\u003e interest_hashtag.lower():\n                        dictRecord[\u0027key_tag\u0027] \u003d interest_hashtag.lower()\n                        dictRecord[\u0027tmstamp\u0027] \u003d str(datetime.datetime.now())[0:19]\n                        if \u0027list_tag\u0027 in dictRecord.keys():\n                            dictRecord[\u0027list_tag\u0027] \u003d dictRecord[\u0027list_tag\u0027]+ [item[\u0027text\u0027].lower()]\n                        else:\n                            dictRecord[\u0027list_tag\u0027] \u003d [item[\u0027text\u0027].lower()]\n                print dictRecord\n                producer.send(topic, dictRecord)  # send message\n                producer.flush()\n        \n        return True\n    def on_error(self, status):\n        print status\n\n\ndef main():\n    l \u003d StdOutListener()\n    auth \u003d OAuthHandler(consumer_key, consumer_secret)\n    auth.set_access_token(access_token, access_token_secret)\n    stream \u003d Stream(auth, l)\n    stream.filter(track\u003d[interest_hashtag], languages\u003d[\u0027en\u0027])\n\n\nmain()",
+      "user": "anonymous",
+      "dateUpdated": "Feb 8, 2017 7:01:29 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/text",
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1486526471586_-303272142",
+      "id": "20170208-070111_1539493445",
+      "dateCreated": "Feb 8, 2017 7:01:11 AM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Spark Streaming --\u003e MySQL",
+      "text": "%pyspark\n\nfrom pyspark.streaming import StreamingContext\nfrom pyspark.streaming.kafka import KafkaUtils\nfrom pyspark.sql import functions as F\nimport json\nimport MySQLdb\nimport datetime\nimport sys\nreload(sys)\nsys.setdefaultencoding(\u0027utf-8\u0027)\n\ndef process(itern):\n    conn \u003d MySQLdb.connect(\"url\",\"user\",\"passw\",\"test\", use_unicode\u003dTrue, charset\u003d\"utf8\")\n    c \u003d conn.cursor()\n    for record in itern:\n        print record\n        if \u0027list_tag\u0027 in record.keys():\n            for tag in record[\u0027list_tag\u0027]:        \n                insert_record\u003d\"insert into hashtags (tmstmp, key_tag, hashtags) values (\u0027\"+str(record[\u0027tmstamp\u0027])+\"\u0027, \u0027\"+record[\u0027key_tag\u0027].lower()+\"\u0027, \u0027\"+tag.lower()+\"\u0027)\"        \n                c.execute(insert_record)\n    conn.commit()\n\n\nstream \u003d StreamingContext(sc, 5)  # 5 second window\n\nkafka_stream \u003d KafkaUtils.createDirectStream(stream, [\"hashtag\"], {\"metadata.broker.list\": \"xxxx:6667\"})\nparsed \u003d kafka_stream.map(lambda (k, v): json.loads(v))\n\nparsed.foreachRDD(lambda rdd: rdd.foreachPartition(process))\nparsed.pprint(50)  # print results for 50 users\n\nstream.start()\nstream.awaitTermination()",
+      "user": "amelnikova",
+      "dateUpdated": "Feb 8, 2017 6:59:59 AM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/text",
+        "title": true,
+        "editorHide": false,
+        "tableHide": false,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "result": "org.apache.thrift.transport.TTransportException",
+      "apps": [],
+      "jobName": "paragraph_1486467419686_1494682712",
+      "id": "20170207-143659_836775864",
+      "dateCreated": "Feb 7, 2017 2:36:59 AM",
+      "dateStarted": "Feb 7, 2017 8:46:08 PM",
+      "dateFinished": "Feb 7, 2017 9:00:52 PM",
+      "status": "FINISHED",
+      "errorMessage": "org.apache.thrift.transport.TTransportException\n\tat org.apache.thrift.transport.TIOStreamTransport.read(TIOStreamTransport.java:132)\n\tat org.apache.thrift.transport.TTransport.readAll(TTransport.java:86)\n\tat org.apache.thrift.protocol.TBinaryProtocol.readAll(TBinaryProtocol.java:429)\n\tat org.apache.thrift.protocol.TBinaryProtocol.readI32(TBinaryProtocol.java:318)\n\tat org.apache.thrift.protocol.TBinaryProtocol.readMessageBegin(TBinaryProtocol.java:219)\n\tat org.apache.thrift.TServiceClient.receiveBase(TServiceClient.java:69)\n\tat org.apache.zeppelin.interpreter.thrift.RemoteInterpreterService$Client.recv_interpret(RemoteInterpreterService.java:261)\n\tat org.apache.zeppelin.interpreter.thrift.RemoteInterpreterService$Client.interpret(RemoteInterpreterService.java:245)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreter.interpret(RemoteInterpreter.java:324)\n\tat org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:94)\n\tat org.apache.zeppelin.notebook.Paragraph.jobRun(Paragraph.java:309)\n\tat org.apache.zeppelin.scheduler.Job.run(Job.java:176)\n\tat org.apache.zeppelin.scheduler.RemoteScheduler$JobRunner.run(RemoteScheduler.java:329)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:262)\n\tat java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:178)\n\tat java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:292)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)\n\tat java.lang.Thread.run(Thread.java:745)\n",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Visualization from database",
+      "text": "%sql\nselect hashtags, count(*) \nfrom test.hashtags \nwhere key_tag\u003d\u0027${key_tag}\u0027\ngroup by hashtags \norder by count(*) desc\nlimit 10",
+      "user": "amelnikova",
+      "dateUpdated": "Feb 8, 2017 6:52:00 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "editorMode": "ace/mode/text",
+        "title": true,
+        "results": [
+          {}
+        ],
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false
+        }
+      },
+      "settings": {
+        "params": {
+          "formName": "",
+          "tag": "",
+          "key_tag": "trump"
+        },
+        "forms": {
+          "key_tag": {
+            "name": "key_tag",
+            "defaultValue": "",
+            "hidden": false
+          }
+        }
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "hashtags\tcount(*)\nresist\t306\npresidentbannon\t295\nmaga\t180\ntheresistance\t148\nfakenews\t142\nnoondevos\t108\ndworkinreport\t106\ntrumprussia\t97\nnews\t80\npeoplesmonday\t69\n"
+          }
+        ]
+      },
+      "result": {
+        "code": "SUCCESS",
+        "type": "TABLE",
+        "msg": "hashtags\tcount(*)\nresist\t306\npresidentbannon\t295\nmaga\t180\ntheresistance\t148\nfakenews\t142\nnoondevos\t108\ndworkinreport\t106\ntrumprussia\t97\nnews\t80\npeoplesmonday\t69\n"
+      },
+      "apps": [],
+      "jobName": "paragraph_1486467650773_745686041",
+      "id": "20170207-144050_619162499",
+      "dateCreated": "Feb 7, 2017 2:40:50 AM",
+      "dateStarted": "Feb 7, 2017 9:00:27 PM",
+      "dateFinished": "Feb 7, 2017 9:00:27 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%sql ",
+      "dateUpdated": "Feb 7, 2017 2:42:40 AM",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1486467760522_579275302",
+      "id": "20170207-144240_281042183",
+      "dateCreated": "Feb 7, 2017 2:42:40 AM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "Twitter_Streaming",
+  "id": "2CA7E5V9B",
+  "angularObjects": {},
+  "config": {
+    "looknfeel": "default"
+  },
+  "info": {}
+}
